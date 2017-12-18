@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="generator-new:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/generator_new_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="ucodegen/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="ucodegen" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

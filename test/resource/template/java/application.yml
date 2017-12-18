@@ -1,0 +1,23 @@
+server:
+  port: 9090
+  address: localhost
+  sessionTimeout: 30
+  contextPath: /
+---
+pagehelper:
+  helperDialect: ${root.database.dialect}
+  reasonable: true
+  supportMethodsArguments: true
+  params: pageNum=start;pageSize=limit;pageSizeZero=zero;reasonable=heli;count=contSql
+---
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
+  typeAliasesPackage: ${root.basePackage}.*.entity
+---
+spring:
+  datasource:
+    name: ${root.appName}_Datasource
+    url: ${root.database.url}
+    username: ${root.database.username}
+    password: ${root.database.password}
+    driverClassName: ${root.database.driver}
